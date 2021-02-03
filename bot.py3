@@ -28,12 +28,12 @@ for i in x:
             tweets = api.mentions_timeline()
             for tweet in tweets:
                 tweet.favorite()
-            sleep(3600)
+            sleep(1800)
         else:
             pass
     except tweepy.TweepError as e:
     	print(e.reason)
-    	sleep(3600)
+    	sleep(1800)
 f.close()
 
 
