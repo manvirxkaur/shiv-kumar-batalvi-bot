@@ -24,7 +24,7 @@ random.shuffle(x);
 for i in x:
     try:
         if (i!='\n') :
-            api.update_status(i+' #FarmersProtest')
+            api.update_status(i+'\n #FarmersProtest')
             tweets = api.mentions_timeline()
             for tweet in tweets:
                 tweet.favorite()
@@ -33,7 +33,7 @@ for i in x:
             pass
     except tweepy.TweepError as e:
     	print(e.reason)
-    	sleep(3)
+    	sleep(100)
 f.close()
 
 
