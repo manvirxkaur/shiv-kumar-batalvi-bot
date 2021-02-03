@@ -33,7 +33,7 @@ for i in x:
             pass
     except tweepy.TweepError as e:
     	print(e.reason)
-    	sleep(100)
+    	sleep(3600)
 f.close()
 
 
