@@ -24,16 +24,16 @@ random.shuffle(x);
 for i in x:
     try:
         if (i!='\n') :
-            api.update_status(i+'\n\n#FarmersProtest #FarmersAreIndia #FarmersStandingFirm')
+            api.update_status(i+'\n\n#FarmersProtest #IndiaSupportsChakkaJaam #IStandWithFarmers')
             tweets = api.mentions_timeline()
             for tweet in tweets:
                 tweet.favorite()
-            sleep(1800)
+            sleep(3600)
         else:
             pass
     except tweepy.TweepError as e:
     	print(e.reason)
-    	sleep(1800)
+    	sleep(3600)
 f.close()
 
 
