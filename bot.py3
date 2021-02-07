@@ -24,7 +24,7 @@ random.shuffle(x);
 for i in x:
     try:
         if (i!='\n') :
-            api.update_status(i+'\n\n#FarmersProtest #IndiaSupportsChakkaJaam #IStandWithFarmers')
+            api.update_status(i+'\n\n#FarmersProtests #ReleaseNodeepKaur #SpeakUpForNodeep')
             tweets = api.mentions_timeline()
             for tweet in tweets:
                 tweet.favorite()
