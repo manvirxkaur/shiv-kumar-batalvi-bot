@@ -20,11 +20,12 @@ f = open ("poems.txt", 'r', encoding='utf-8')
 text = f.read()
 x = text.split("।")
 random.shuffle(x);
+random.shuffle(x);
 
 for i in x:
     try:
         if (i!='\n') :
-            api.update_status(i+'\n\n#FarmersProtest #FarmersAboveReligousHate #ReleaseNodeepKaur')
+            api.update_status(i+'\n\n#FarmersProtest')
             tweets = api.mentions_timeline()
             for tweet in tweets:
                 tweet.favorite()
